@@ -310,6 +310,7 @@ header .navbar-collapse .nav-link:hover {
   color: #545454;
   position: fixed;
   bottom: 3rem;
+  right: -3rem;
   opacity: 0.4;
   display: flex;
   justify-content: center;
