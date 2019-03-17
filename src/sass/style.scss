@@ -1,0 +1,321 @@
+@import "_base";
+
+
+/*  Header-  */
+header {
+    .navbar {
+        padding: 0;
+    }
+
+    .navbar-toggler-icon {
+        color: $color-dark;
+    }
+
+    .navbar-collapse {
+        //  opacity: 1;
+        text-align: center;
+
+        .nav-link {
+            color: $color-dark;
+            font-size: 1em;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+
+            &:hover {
+                border-bottom: 1px solid $color-dark;
+                color: $color-orange;
+            }
+        }
+    }
+}
+
+/*  Jumbotron  */
+.jumbotron {
+    height: 100vh;
+    color: $color-white;
+    background: $jumbotron-background;
+    background-attachment: fixed;
+    background-size: cover;
+    border-radius: 0;
+    justify-content: center;
+    align-items: center;
+    line-height: 50px;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 0;
+
+    p {
+        font-weight: 300;
+        margin: 2rem 0 0 0;
+    }
+
+    h1 {
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-bottom: 3rem;
+    }
+
+    a {
+        color: $color-white;
+        font-size: 0.9em;
+        font-weight: 500;
+        letter-spacing: 1px;
+        padding: 0.5em 2em;
+
+        &:hover {
+            transform: scale(1.1);
+            color: $color-white;
+            transition: 0.3s;
+            background: $color-orange;
+        }
+    }
+}
+
+/*  Services  */
+.services {
+    .services-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0.2;
+        margin-bottom: 2rem;
+
+        .fas {
+            font-size: 8em;
+        }
+    }
+
+    .services_1,
+    .services_2 {
+        padding: $section-padding;
+    }
+
+    .services_2 {
+        background-color: $background-section;
+    }
+}
+
+/*  Skills  */
+.skills {
+    padding: $section-padding;
+
+    .skill-box {
+        padding-bottom: 2rem;
+    }
+
+    .skill-box:last-child {
+        padding-bottom: 0;
+    }
+
+    .icon-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .skill-icon {
+        background-color: $color-dark;
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+
+        &:hover {
+            background-color: $color-orange;
+            transition: 0.3s;
+        }
+
+        i {
+            font-size: 2.5rem;
+            color: $color-white;
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+/* Clients */
+.clients {
+    background-color: $background-section;
+    padding: $section-padding;
+    padding-bottom: 0;
+
+    .clients-title {
+        padding-bottom: 0;
+    }
+
+    .client-img img {
+        @include face-img;
+    }
+
+    .client-box {
+        margin-bottom: 2.5rem;
+        background-color: $color-white;
+        display: flex;
+        align-items: center;
+        border: 1px solid $color-dark;
+
+        .blockquote {
+            padding: 0.5rem;
+        }
+
+        .blockquote-footer {
+            color: $color-blue;
+            padding-top: 0.5rem;
+        }
+    }
+}
+
+.brand {
+    padding: 1rem;
+
+    .brand-box {
+        background: $color-white;
+        display: flex;
+        flex-direction: row;
+
+        .client-brand {
+            padding: 0;
+            text-align: center;
+
+            img {
+                width: 22%;
+                padding: 0.3rem;
+                opacity: 0.6;
+            }
+        }
+
+    }
+}
+
+/* Team */
+.team {
+    background: $color-black;
+    color: $color-white;
+    padding: $section-padding;
+    text-align: center;
+
+    .team-img {
+        font-family: $font-mukta;
+
+        img {
+            @include face-img;
+        }
+    }
+
+    .team-icon {
+        margin-bottom: 1rem;
+
+        i {
+            color: $color-white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 2px solid $color-white;
+            margin: 0 0.3rem;
+            font-size: 1.2em;
+            padding-top: 8px;
+
+            &:hover {
+                color: $color-orange;
+                border: 2px solid $color-orange;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+        }
+    }
+
+    .team-motto {
+        @include face-img;
+    }
+}
+
+/* Contact */
+.contact {
+    padding-top: 3rem;
+    background-color: $color-blue;
+    color: $color-white;
+
+    .contact-content {
+        padding-bottom: 3rem;
+        border-bottom: 1px solid $color-orange;
+    }
+
+    .contact-box {
+        h1 {
+            margin-bottom: 1rem;
+        }
+
+        .contact-port {
+            padding-top: 2rem;
+
+            .port {
+                display: flex;
+                align-items: center;
+                margin-bottom: 2rem;
+
+                i {
+                    width: 28px;
+                    font-size: 1.2em;
+                    margin-right: 1.5rem;
+                    text-align: center;
+                }
+
+                p {
+                    display: inline-block;
+                    flex: 1;
+                    margin-bottom: 0;
+                    font-size: 0.8em;
+                }
+            }
+        }
+    }
+
+    .contact-form {
+        margin-top: 1rem;
+
+    }
+}
+
+/* Footer */
+.footer {
+    padding: 1rem 0;
+    background-color: $color-blue;
+    color: $color-white;
+    text-align: center;
+    border: none;
+
+    #slideUp {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        border: 2px solid $color-orange;
+        z-index: 2;
+        color: $color-dark;
+        position: fixed;
+        bottom: 3rem;
+        opacity: 0.4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            opacity: 1;
+            background-color: $color-orange;
+        }
+
+        .fas {
+            font-size: 1.5em;
+        }
+    }
+
+    p {
+        margin: 0;
+        font-size: 0.7em;
+    }
+}
+
+
+@import "_media";

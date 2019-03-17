@@ -1,0 +1,76 @@
+@import "_base";
+
+@media (min-width: 768px) {
+
+    /* Header */
+    header {
+        //display: flex;
+
+        .navbar-collapse {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+    }
+
+    /*  Services  */
+    .services {
+        .services-icon {
+            .fas {
+                font-size: 12em;
+            }
+        }
+
+        .services_1 {
+            display: flex;
+
+            .services-icon {
+                order: 2;
+            }
+
+            .services-content {
+                order: 1;
+            }
+        }
+    }
+
+    /* Clients */
+    .clients {
+        display: flex;
+
+        .clients-title {
+            padding-bottom: 2rem;
+        }
+
+        .box-2 {
+            .client-img {
+                order: 2;
+            }
+
+            .client-box {
+                order: 1;
+            }
+        }
+
+        .client-img {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2.5rem;
+
+            img {
+                margin: 0;
+            }
+        }
+
+    }
+
+    /* Team */
+    .team {
+        .team-icon {
+            i {
+                width: 40px;
+                height: 40px;
+                margin: 0 0.1rem;
+            }
+        }
+    }
+}
